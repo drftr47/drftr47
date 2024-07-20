@@ -1,0 +1,9 @@
+- 👋 Hi, I’m @drftr47
+- 👀 I’m interested in coding, cybersecurity, gaming...  
+- 🌱 I’m currently learning to code from youtube and websites...
+- 💞️ I’m looking to collaborate on making websites, mobile apps and having fun coding with friends...
+- 📫 How to reach me ... you can reach me via email on drftr47@gmail.com 
+<!---
+drftr47/drftr47 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
