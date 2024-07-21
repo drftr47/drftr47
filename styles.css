@@ -2,12 +2,17 @@ body {
     background-color: aqua;
     background-image: url('images/background.jpg');
     background-size: cover;
-    position: relative; /* Ensure the body is the reference for absolute positioning */
-    height: 100vh; /* Ensure the body takes the full height of the viewport */
-    margin: 0; /* Remove default margin */
+    position: relative;
+    /* Ensure the body is the reference for absolute positioning */
+    height: 100vh;
+    /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+    /* Remove default margin */
 }
 
-h1, h3, h2{
+h1,
+h3,
+h2 {
     text-align: right;
     color: aquamarine;
     font-family: Helvetica;
@@ -16,31 +21,72 @@ h1, h3, h2{
 
 
 .container {
-    display: flex; /* Use flexbox to align buttons horizontally */
-    justify-content: center; /* Center the buttons horizontally */
+    display: flex;
+    /* Use flexbox to align buttons horizontally */
+    justify-content: flex-start;
+    /* Align the buttons to the left */
     position: absolute;
     bottom: 20px;
-    left: 0;
-    right: 0;
+    left: 20px;
+    /* Move the container 20px from the left edge */
 }
 
 button {
-    background-color: #4CAF50; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 15px 32px; /* Some padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Increase font size */
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 12px; /* Rounded corners */
-    transition-duration: 0.4s; /* Animation duration */
-    margin: 5px; /* Add some space between buttons */
+    background-color: #4CAF50;
+    /* Green background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    padding: 15px 32px;
+    /* Some padding */
+    text-align: center;
+    /* Centered text */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 16px;
+    /* Increase font size */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    border-radius: 12px;
+    /* Rounded corners */
+    transition-duration: 0.4s;
+    /* Animation duration */
+    margin: 5px;
+    /* Add some space between buttons */
 }
 
 
 button:hover {
-    background-color: white; /* White background on hover */
-    color: black; /* Black text on hover */
-    border: 2px solid #4CAF50; /* Green border on hover */
+    background-color: white;
+    /* White background on hover */
+    color: black;
+    /* Black text on hover */
+    border: 2px solid #4CAF50;
+    /* Green border on hover */
 }
+
+
+
+/* For screens with a maximum width of 768px ( typical tablet screen size) */
+@media only screen and (max-width: 768px) {
+    /* Apply styles here that you want to apply only on tablets */
+    .container {
+      flex-direction: column; /* Make the buttons stack vertically on tablets */
+    }
+    button {
+      padding: 10px 20px; /* Reduce padding on buttons on tablets */
+    }
+  }
+  
+  /* For screens with a maximum width of 480px ( typical mobile screen size) */
+  @media only screen and (max-width: 480px) {
+    /* Apply styles here that you want to apply only on mobile phones */
+    .container {
+      flex-direction: column; /* Make the buttons stack vertically on mobile phones */
+    }
+    button {
+      padding: 5px 10px; /* Reduce padding on buttons on mobile phones */
+      font-size: 14px; /* Reduce font size on mobile phones */
+    }
+  }
