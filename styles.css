@@ -90,3 +90,7 @@ button:hover {
       font-size: 14px; /* Reduce font size on mobile phones */
     }
   }
+
+h1{
+    font-size: 40px;
+}
